@@ -1,0 +1,239 @@
+:root{
+    --cAzul: rgb(16, 20, 57);
+    --cRojo: rgb(198, 0, 0);
+    --cGris: grey;
+    --cBlanco: white;
+    --cNegro: black;
+}
+
+@font-face {
+    font-family: 'Abril';
+    src: url(/fonts/AbrilFatface-Regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 55px;
+    font-family:'Abril';
+}
+h2 {
+    font-size: 30px;
+    font-family:'Abril';
+}
+h3{
+    font-size: 20px;
+    font-family:'Abril';
+}
+p, a, input {
+    font-family:'Montserrat';
+    font-weight: 300;
+
+}
+
+/* Header */
+header{
+    background-color: var(--cNegro);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header nav ul li {
+    width: 100%;
+}
+header nav ul li a {
+    background-color: var(--cAzul);
+    color: var(--cBlanco);
+}
+
+header nav ul li a:hover{
+    transition: 0.5s;
+    border: 1px solid var(--cRojo);
+}
+
+.centrar {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+#navbarSupportedContent ul li a{
+    color: white;
+    letter-spacing: 2px;
+}
+
+#navbarSupportedContent ul li a:hover, #navbarSupportedContent .active{
+    color: red;
+}
+
+.bg-light{
+    background-color: black!important;
+}
+
+/* Primera SECCION */
+
+#primeraSeccion {
+    background-image: url(../img/peluqueriaMasculina.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    margin: 0;
+
+    height: 300px;
+
+    border-top: 6px solid var(--cRojo);
+}
+
+#primeraSeccion h1 {
+    color: var(--cBlanco);
+}
+#primeraSeccion h1 span {
+    color: var(--cRojo);
+}
+
+/* Seccion SERVICIOS */
+
+#servicios article {
+    border: 1px solid var(--cNegro);
+}
+#servicios article a{
+    background-color: var(--cRojo);
+    color:var(--cBlanco)
+}
+
+#servicios article h3{
+    text-transform: uppercase;
+}
+
+#servicios h3 span{
+    color: var(--cRojo);
+}
+h2 span {
+    color: var(--cRojo);
+}
+
+h3 span {
+    color: var(--cRojo);
+}
+
+#servicios article:hover{
+    border: 2px solid var(--cRojo);
+}
+
+
+/* Seccion OPINIONES */
+
+#opiniones article a {
+    background-color: var(--cRojo);
+    color:var(--cBlanco)
+}
+
+#opiniones .carousel-indicators {
+     
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+#opiniones div:nth-of-type(2) {
+    height: 40vh;
+}
+#opiniones div:nth-of-type(2) article figure {
+    width: 20vh;
+    margin: 0 auto;
+
+}
+
+#opiniones article p {
+    margin: 0 auto;
+}
+
+
+/* SECCION CONTACTO */
+
+#contacto input{
+    border: 2px solid var(--cRojo);
+}
+
+#contacto input:nth-of-type(3){
+    background-color: var(--cRojo);
+    color: var(--cBlanco);
+}
+
+#contacto input:nth-of-type(3):hover{
+    background-color: var(--cAzul);
+    color: var(--cBlanco);
+}
+
+/* SECCION UBICACION */
+#ubicacion div:nth-of-type(1) iframe{
+    width: 80vw !important;
+    height: 60vh !important;
+    margin: 0 auto;
+}
+
+/* SECCION FOOTER */
+
+footer {
+    background-color: black;
+    color: var(--cBlanco);
+}
+
+footer p a {
+    color: var(--cBlanco);
+}
+
+footer p {
+    
+    margin-bottom: 0;
+   
+}
+
+
+/* Estilos para Boton Subir */
+
+#btnSubir {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: var(--cNegro);
+    border: solid 1px var(--cNegro);
+    border-radius: 30px;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    text-align: center;
+    transition: background-color 0.5s;
+
+}
+  
+#btnSubir:hover {
+    background-color: var(--cAzul);
+}
+
+
+/* Estilos para resoluciones medianas (md) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #opiniones article p {
+      width: 75%;
+    }
+}
+  
+/* Estilos para resoluciones grandes (lg) */
+@media only screen and (min-width: 992px) {
+    #opiniones article p {
+        width: 50%;
+    }
+}

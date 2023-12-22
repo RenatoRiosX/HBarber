@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HBarber</title>
+    <meta name="description" content="Pagina web de la peluqueria HBarber ubicada en Tacuarembó" />
+    <meta name="keywords" content="Peluqueria masculina, Peluqueria, Corte de pelo, Afeitado, Barberia, Peinado, Cuidado del cabello, Hombres, Masculinidad" />
+
+    <link rel="shortcut icon" href="img/logo.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+
+    <!--CSS Propio-->
+    <link rel="stylesheet" href="css/estilos.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Cinzel&family=Gruppo&family=Josefin+Sans:wght@300;400;500&family=Montserrat&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+    <!-- JS Propio -->
+    <script src="funciones.js"></script>
+  </head>
+
+  <body>
+    
+
+    <!-- Header -->
+    <div class="container-fluid">
+        <header id="header" class="row justify-content-center align-items-center">
+            <nav class="col-12 col-md-10 navbar navbar-expand-md navbar-dark">
+                <figure class="col-lg-1 col-md-2 col-sm-3 col-4 centrar my-3">
+                    <img src="/img/logo.jpeg" alt="Logo de la pagina" class="img-fluid w-70" />
+                </figure>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse centrar" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 text-center w-100">
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="#agenda">Agenda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#opiniones">Opiniones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ubicacion">Ubicación</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+            
+        </header>
+    </div>
+
+
+    <!-- Primera Seccion -->
+    <section class="row justify-content-center align-items-center py-sm-5" id="primeraSeccion" >
+        <h1 class="col-11 text-center"><span>HACHE</span> Barber</h1>
+    </section>
+
+    <!-- Contenedor Principal -->
+    <main class="container-fluid">
+
+        <!-- Seccion RESERVAR HORA -->
+        <section class="row justify-content-center my-3 text-center" id="contacto">
+            <h2 class="">Reservar <span>Hora</span></h2>
+            
+            <!-- Principio del widget integrado de Calendly -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/renatoriosx?hide_gdpr_banner=1&primary_color=2279f4" style="min-width:320px;height:700px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Final del widget integrado de Calendly -->
+            
+        </section>
+
+        <!-- Seccion SERVICIOS -->
+        <section class="row justify-content-center align-items-center pt-3 mb-5 mb-md-4" id="servicios">
+            <h2 class="col-lg-12 text-center"><span>S</span>ervicios</h2>
+            <article class="col-lg-2 col-md-4 col-7 text-center  pt-lg-4">
+                <figure>
+                    <img src="img/tijeras.png" alt="" class="img-fluid w-70"/>
+                </figure>
+                <h3 class=""><span>Corte</span> de cabello</h3>
+                <p>Experimenta el arte de la barbería moderna con cortes personalizados que resaltan tu estilo único.</p>
+            </article>
+            <article class="col-lg-2 col-md-4 col-7 text-center  pt-lg-4 ms-2 mt-4 mt-md-0 mt-lg-0">
+                <figure>
+                    <img src="img/navajaDeAfeitar.png" alt="" class="img-fluid w-70"/>
+                </figure>
+                <h3 class=""><span>Afei</span>tado</h3>
+                <p>Desde afeitados clásicos hasta arreglos de barba, te brindamos la mejor atención.</p>
+            </article>
+            <article class="col-lg-2 col-md-4 col-7 text-center  pt-lg-4 ms-2 mt-4 mt-md-0 mt-lg-0">
+                <figure class="">
+                    <img src="img/peine.png" alt="" class="img-fluid"/>
+                </figure>
+                <h3 class=""><span>Coloración</span> de pelo</h3>
+                <p>Desde resaltar tu estilo con reflejos sutiles a atreverse con tonos audaces, lo hacemos todo.</p>
+            </article>
+           
+        </section>
+
+        <!-- SECCION OPINIONES -->
+        <section class="row justify-content-center pt-3 mb-4 carousel carousel-dark slide" id="opiniones">
+            <h2 class="col-lg-12 text-center mb-4"><span>O</span>piniones de nuestros clientes</h2>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#opiniones" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#opiniones" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#opiniones" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner col-lg-12 mb-3">
+                <article class="carousel-item active text-center" data-bs-interval="5000">
+                
+                    <figure>
+                        <img src="img/opinion1.png" alt="" class=" img-fluid rounded-circle"/>
+                    </figure>
+                    <h3 class="">Juan</h3>
+                    <p class=" ">
+                        El estilista entendió mis preferencias de corte de cabello y me ofreció sugerencias que realmente se adaptaban a mi estilo. La atención al cliente fue excepcional.                    
+                    </p>
+                    
+                </article>
+                <article class="carousel-item text-center" data-bs-interval="4000">
+                    <figure>
+                        <img src="img/opinion2.png" alt="" class=" img-fluid rounded-circle"/>
+                    </figure>
+                    <h3 class="">Jose</h3>
+                    <p class=" ">
+                        Quedé impresionado por la profesionalidad y habilidad técnica del personal en esta peluquería.                    
+                    </p>
+                </article>
+                <article class="carousel-item text-center">
+                    <figure>
+                        <img src="img/opinion3.png" alt="" class=" img-fluid rounded-circle"/>
+                    </figure>
+                    <h3 class="">Mario</h3>
+                    <p class=" ">
+                        La peluquería tiene un ambiente moderno y cómodo que destaca por su estilo contemporáneo. Me gusto mucho el corte que me hicieron.                    
+                    </p>
+                </article>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#opiniones" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#opiniones" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+            
+        </section>
+
+
+
+        <!-- Seccion UBICACION -->
+        <section class="row justify-content-center pt-sm-3 mb-4" id="ubicacion">
+            <h2 class="col-12 text-center">Nuestra <span>Ubicación</span></h2>
+
+            <div class="text-center">
+                <iframe class="w-70" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2018.1702817745947!2d-55.990185639515765!3d-31.711952706897637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a84f89a0b59e95%3A0xd7f4ebe5210fc08b!2sHACHE%20Barber!5e0!3m2!1ses!2suy!4v1702314812968!5m2!1ses!2suy"   style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        
+
+    </main>
+
+    <!-- Botón para volver arriba -->
+    <a href="#header" id="btnSubir"><img src="img/flecha.png" alt="Icono de flecha hacia arriba"></a>
+
+    <div class="container-fluid">
+        <footer class="row py-3 justify-content-center text-center">
+            <h2><span>Síguenos</span> en Instagram</h2>
+            <nav class="col-12 col-md-10 ">
+
+                <ul class="list-inline list-unstyled text-center">
+                    <li class="list-inline-item">
+                        <a class="active" href="https://www.instagram.com/hhache_barber/" target="_blank"><img src="img/ig.png" alt="Nuestro Instagram"></a>
+                    </li>
+                </ul>
+
+            </nav>
+            <p class="col-12 text-center"> 
+                Sitio realizado por <a href="https://www.instagram.com/renato_riosx/" target="_blank"><b>Renato Ríos</b></a>
+            </p>
+            <p> 
+                Iconos brindados por <a class="" href="https://iconos8.es/icons" target="_blank"><b>iconos8</b></a>
+            </p>
+
+        </footer>
+    </div>
+
+  </body>
+</html>
